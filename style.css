@@ -108,15 +108,23 @@ a {
 }
 
 .know-more {
+  padding-top: 25px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 50px;
+  height: 250px;
+  font-size: 15px;
+  line-height: 1.8;
+  /* background-color: red; */
 }
 
-.title {
+.know-more .title {
   display: flex;
   align-items: center;
   gap: 15px;
+
+  font-size: 20px;
+  margin-bottom: 12px;
 }
 
 .skill-info {
@@ -132,9 +140,9 @@ a {
 }
 
 .progress {
-  width: 90%;
+  /* width: 90%; */
   height: 100%;
-  background-color: #e9a511;
+  background-color: #f48524;
   border-radius: 10px;
 }
 
@@ -144,11 +152,33 @@ a {
   gap: 15px;
 }
 
-.skill > span:first-child {
+.skill span:first-child {
   width: 100px;
 }
 
-.skill > span:last-child {
+.skill span:last-child {
   width: 40px;
-  text-align: left;
 }
+
+.know-more i {
+  color: #f48524;
+}
+
+.what-i-do > ul > .i-do {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.about-me,
+.what-i-do {
+  border-right: 1.5px solid rgba(0, 0, 0, 0.149);
+  padding-right: 50px;
+}
+
+.projects {
+  padding-top: 25px;
+  /* background-color: red; */
+  height: 100px;
+}
+
