@@ -83,8 +83,13 @@ a {
 }
 
 .btn {
+  transition: transform 0.2s ease;
   padding: 12px 40px;
   border-radius: 10px;
+}
+
+.btn:hover {
+  transform: scale(1.03);
 }
 
 .primary {
@@ -176,18 +181,13 @@ a {
   padding-right: 50px;
 }
 
-.projects {
-  padding-top: 25px;
-  /* background-color: red; */
-  height: 100px;
-}
-
 .projects .title {
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
   font-size: 20px;
+  padding-bottom: 25px;
 }
 
 .projects .title a {
@@ -200,6 +200,10 @@ a {
   color: var(--orange);
   font-weight: bold;
   font-size: 15px;
+}
+
+.projects {
+  padding-top: 25px;
 }
 
 footer {
@@ -227,6 +231,70 @@ footer {
 .about-me > a {
   color: black;
 }
+
 .about-me > a:hover {
   color: white;
 }
+
+.card {
+  width: 400px;
+  height: 550px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.268);
+  overflow: hidden;
+}
+
+.card > .top {
+  overflow: hidden;
+  background-color: blue;
+  height: 52%;
+}
+
+.card > .top img {
+  height: 130%;
+  width: 100%;
+  object-fit: cover;
+}
+.featured-projects {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+
+}
+
+.featured-projects .bottom {
+  padding: 22px;
+}
+
+.project-title {
+  margin-bottom: 15px;
+}
+
+.technologies span {
+  padding: 10px 20px;
+  color: rgb(63, 63, 63);
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+  margin-right: 8px;
+}
+
+.project-desc {
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.card-footer a {
+  font-size: 15px;
+}
+
+.card-footer i {
+  color: black;
+}
+
