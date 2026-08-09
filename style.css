@@ -182,7 +182,7 @@ a {
   height: 100px;
 }
 
-.projects .title{
+.projects .title {
   display: flex;
   position: relative;
   justify-content: center;
@@ -190,13 +190,43 @@ a {
   font-size: 20px;
 }
 
-.projects .title a{
+.projects .title a {
   position: absolute;
   right: 0;
 }
 
-.projects a, .projects i {
+.projects a,
+.projects i {
   color: var(--orange);
   font-weight: bold;
   font-size: 15px;
+}
+
+footer {
+  height: 100px;
+  background-color: #0a0d11;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-me > .btn {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 5px 50px;
+  margin-top: 18px;
+  border-radius: 10px;
+}
+
+.about-me > .btn:hover {
+  background-color: var(--orange);
+  border: none;
+}
+
+.about-me > a {
+  color: black;
+}
+.about-me > a:hover {
+  color: white;
 }
