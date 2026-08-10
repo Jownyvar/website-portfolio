@@ -89,7 +89,8 @@ a {
 }
 
 .btn:hover {
-  transform: scale(1.03);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(185, 157, 88, 0.25);
 }
 
 .primary {
