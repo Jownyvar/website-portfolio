@@ -89,8 +89,8 @@ a {
 }
 
 .btn:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(185, 157, 88, 0.25);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(185, 157, 88, 0.25);
 }
 
 .primary {
@@ -177,7 +177,9 @@ a {
 }
 
 .about-me,
-.what-i-do {
+.what-i-do,
+.experience-section,
+.education-section {
   border-right: 1.5px solid rgba(0, 0, 0, 0.149);
   padding-right: 50px;
 }
@@ -260,7 +262,6 @@ footer {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 40px;
-
 }
 
 .featured-projects .bottom {
@@ -298,4 +299,46 @@ footer {
 .card-footer i {
   color: black;
 }
+
+.background {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-bottom: 15px;
+}
+
+.background-title {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.background-title::before {
+  content: "";
+  background-color: var(--orange);
+  width: 50px;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+}
+
+.school {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.school-background > .course,
+.school-background > .timeline {
+  color: rgb(90, 90, 90);
+}
+
+.school img:first-child {
+  margin-right: 20px;
+}
+
+
 
