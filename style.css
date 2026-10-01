@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+html{
+  scroll-behavior: smooth;
+}
+
 :root {
   --content-padding: 70px;
   --orange: #f48524;
@@ -86,10 +91,11 @@ a {
   transition: transform 0.2s ease;
   padding: 12px 40px;
   border-radius: 10px;
+
 }
 
 .btn:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(185, 157, 88, 0.25);
 }
 
@@ -340,5 +346,55 @@ footer {
   margin-right: 20px;
 }
 
+input {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #929292;
+  outline: none;
+  width: 500px;
+  height: 50px;
+}
 
+input:focus,
+textarea:focus {
+  border-color: #ff7e29;
+}
 
+textarea {
+  width: 500px;
+  padding: 15px;
+  border: 1px solid #929292;
+  border-radius: 10px;
+  outline: none;
+  height: 200px;
+}
+.contact-section{
+  width: 500px;
+}
+.contact-section div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section label {
+  height: 25px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact-section button{
+  padding: 10px 50px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #ccc;
+  background-color: var(--orange);
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.contact-section{
+  margin-bottom: 25px;
+}
