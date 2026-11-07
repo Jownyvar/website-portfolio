@@ -3,8 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="John Lloyd Vargas — BSIT student and web developer."
+    />
+    <meta name="theme-color" content="#0a0d11" />
     <title>John Lloyd Vargas | Portfolio</title>
-    <link rel="icon" href="assets/logo.svg" />
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -12,331 +23,400 @@
     />
   </head>
   <body>
-    <div class="hero-container">
-      <header>
-        <div class="container">
-          <nav>
-            <div class="logo">
-              <p>V Vargas | Developer</p>
+    <header class="hero" id="home">
+      <div class="container">
+        <nav class="navbar" aria-label="Main navigation">
+          <a class="logo" href="#home">V Vargas <span>| Developer</span></a>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul class="navigation" id="primary-navigation">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <section class="hero-content">
+          <div class="hero-copy">
+            <p class="eyebrow">Hello, I'm</p>
+            <h1>VARGAS<span>.</span></h1>
+            <p class="subtitle">
+              BSIT STUDENT <span>&amp;</span><br class="desktop-break" />
+              WEB DEVELOPER
+            </p>
+            <p class="description">
+              I build responsive and user-friendly websites with clean code and
+              thoughtful design.
+            </p>
+            <div class="cta">
+              <a href="#projects" class="btn primary"
+                ><i class="fa-regular fa-folder-open"></i> View My Projects</a
+              >
+              <a
+                href="assets/resume.pdf"
+                download="John-Lloyd-Vargas-Resume.pdf"
+                class="btn secondary"
+                ><i class="fa-solid fa-download"></i> Download Resume</a
+              >
             </div>
-
-            <ul class="navigation">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <!-- <li><a href="#skills">Skills</a></li> -->
-              <!-- <li><a href="#blogs">Blogs</a></li> -->
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-          <hr style="border: 0.5px solid rgba(251, 249, 249, 0.059)" />
-        </div>
-        <div class="container">
-          <section class="hero-section">
-            <div class="right">
-              <p class="greeting">Hello, I'm</p>
-              <h1>VARGAS</h1>
-              <p class="subtitle">BSIT STUDENT & WEB DEVELOPER</p>
-              <p class="description">
-                I build responsive and user-friendly websites with clean codes
-                and great design.
-              </p>
-              <div class="cta">
-                <a href="" class="btn primary"
-                  ><i class="fa-regular fa-user"></i>View My Projects</a
-                >
+            <div class="social">
+              <span>Find me on</span>
+              <div class="social-links">
                 <a
-                  href="assets/resume.pdf"
-                  download="resume.pdf"
-                  class="btn secondary"
-                  ><i class="fa-solid fa-download"></i>Download Resume</a
-                >
+                  href="https://www.linkedin.com/in/john-lloyd-vargas-196449320/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a
+                  href="https://github.com/Jownyvar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/jownyvar/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
               </div>
-              <div class="social">
-                <p class="social-label">Find me on</p>
-                <div class="social-links">
-                  <a
-                    href="https://www.linkedin.com/in/john-lloyd-vargas-196449320/"
-                    target="_blank"
-                    aria-label="LinkedIn"
-                    ><i class="fa-brands fa-linkedin"></i
-                  ></a>
-                  <a
-                    href="https://github.com/Jownyvar"
-                    target="_blank"
-                    aria-label="GitHub"
-                  >
-                    <i class="fa-brands fa-github"></i>
-                  </a>
-                  <a
-                    href="https://www.facebook.com/jownyvar/"
-                    target="_blank"
-                    aria-label="Facebook"
-                    ><i class="fa-brands fa-facebook"></i
-                  ></a>
+            </div>
+          </div>
+          <!-- <div class="hero-decoration" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-mark">V<span>.</span></div><p>BUILDING<br> DIGITAL EXPERIENCES</p></div> -->
+        </section>
+        <!-- <div class="hero-bottom"><span>PORTFOLIO / 2026</span><a href="#about">SCROLL TO EXPLORE <i class="fa-solid fa-arrow-down"></i></a></div> -->
+      </div>
+    </header>
+
+    <main>
+      <section class="section container" id="about">
+        <div class="section-kicker">
+          <span>01</span><span>GET TO KNOW ME</span>
+        </div>
+        <div class="intro-grid">
+          <article class="info-panel">
+            <div class="section-heading">
+              <i class="fa-regular fa-user"></i>
+              <h2>ABOUT ME</h2>
+            </div>
+            <p class="about-copy">
+              3rd year BSIT student with a passion for web and mobile
+              application development. I enjoy turning ideas into functional and
+              beautiful digital experiences.
+            </p>
+            <a class="text-link" href="#contact"
+              >Let's connect <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </article>
+          <article class="info-panel">
+            <div class="section-heading">
+              <i class="fa-solid fa-code"></i>
+              <h2>WHAT I DO</h2>
+            </div>
+            <ul class="service-list">
+              <li>
+                <i class="fa-regular fa-circle-check"></i>Responsive Web
+                Development
+              </li>
+              <li>
+                <i class="fa-regular fa-circle-check"></i>Frontend Development
+              </li>
+              <li><i class="fa-regular fa-circle-check"></i>UI/UX Design</li>
+              <li><i class="fa-regular fa-circle-check"></i>Problem Solving</li>
+            </ul>
+          </article>
+          <article class="info-panel skills-panel" id="skills">
+            <div class="section-heading">
+              <i class="fa-solid fa-display"></i>
+              <h2>SKILLS</h2>
+            </div>
+            <div class="skill-list">
+              <div class="skill">
+                <div class="skill-meta"><span>HTML</span><span>90%</span></div>
+                <div class="progress-bar">
+                  <span style="--progress: 90%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-meta">
+                  <span>JavaScript</span><span>80%</span>
+                </div>
+                <div class="progress-bar">
+                  <span style="--progress: 80%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-meta"><span>React</span><span>75%</span></div>
+                <div class="progress-bar">
+                  <span style="--progress: 75%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-meta">
+                  <span>UI/UX Design</span><span>70%</span>
+                </div>
+                <div class="progress-bar">
+                  <span style="--progress: 70%"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-meta">
+                  <span>Git / GitHub</span><span>85%</span>
+                </div>
+                <div class="progress-bar">
+                  <span style="--progress: 85%"></span>
                 </div>
               </div>
             </div>
-          </section>
+          </article>
         </div>
-      </header>
-    </div>
-    <section class="know-more container">
-      <div id="about" class="about-me">
-        <div class="title">
-          <i class="fa-regular fa-user"></i>
-          <h3>ABOUT ME</h3>
-        </div>
-        <p style="font-size: 17px">
-          3rd year BSIT student with a passion for web and mobile application
-          development. I enjoy turning ideas into functional and beautiful
-          digital experiences.
-        </p>
-        <a class="btn" href="">Learn More</a>
-      </div>
-      <div class="what-i-do">
-        <div class="title">
-          <i class="fa-solid fa-code"></i>
-          <h3>WHAT I DO</h3>
-        </div>
-        <ul>
-          <li class="i-do">
-            <i class="fa-regular fa-circle-check"></i>
-            <span style="font-size: 17px">Responsive Web Development</span>
-          </li>
-          <li class="i-do">
-            <i class="fa-regular fa-circle-check"></i>
-            <span style="font-size: 17px">Frontend Development</span>
-          </li>
+      </section>
 
-          <li class="i-do">
-            <i class="fa-regular fa-circle-check"></i>
-            <span style="font-size: 17px">UI/UX Design</span>
-          </li>
-          <li class="i-do">
-            <i class="fa-regular fa-circle-check"></i>
-            <span style="font-size: 17px">Problem Solving</span>
-          </li>
-        </ul>
-      </div>
-      <div class="skills">
-        <div class="title">
-          <i class="fa-solid fa-display"></i>
-          <h3>SKILLS</h3>
-        </div>
-
-        <div class="skill">
-          <span>HTML</span>
-          <div class="progress-bar">
-            <div class="progress" style="width: 90%"></div>
+      <section class="projects-section section" id="projects">
+        <div class="container">
+          <div class="section-kicker">
+            <span>02</span><span>SELECTED WORK</span>
           </div>
-          <span>90%</span>
-        </div>
-        <div class="skill">
-          <span>JavaScript</span>
-          <div class="progress-bar">
-            <div class="progress" style="width: 80%"></div>
+          <div class="section-title-row">
+            <div>
+              <p class="eyebrow">A FEW THINGS I'VE BUILT</p>
+              <h2 class="display-title">FEATURED <span>PROJECTS</span></h2>
+            </div>
+            <span class="project-count">01 — 03</span>
           </div>
-          <span>80%</span>
-        </div>
-        <div class="skill">
-          <span>React</span>
-          <div class="progress-bar">
-            <div class="progress" style="width: 75%"></div>
-          </div>
-          <span>75%</span>
-        </div>
-        <div class="skill">
-          <span>UI/UX Design</span>
-          <div class="progress-bar">
-            <div class="progress" style="width: 70%"></div>
-          </div>
-          <span>70%</span>
-        </div>
-        <div class="skill">
-          <span>Git / GitHub</span>
-          <div class="progress-bar">
-            <div class="progress" style="width: 85%"></div>
-          </div>
-          <span>85%</span>
-        </div>
-      </div>
-    </section>
-    <div class="container">
-      <hr style="color: rgba(0, 0, 0, 0.149); margin-top: 25px" />
-    </div>
-
-    <section id="projects" class="projects container">
-      <div class="title">
-        <h2>FEATURED PROJECTS</h2>
-        <a href="#"
-          >View All Projects <i class="fa-solid fa-arrow-right"></i>
-        </a>
-      </div>
-      <div class="featured-projects">
-        <div class="card">
-          <div class="top">
-            <img src="assets/Record Management System preview.png" alt="" />
-          </div>
-          <div class="bottom">
-            <h3 class="project-title">Student Archive System</h3>
-            <p class="project-desc">
-              A Java-based student archive system developed as a Grade 12 group
-              project for organizing and managing historical student records.
-            </p>
-            <div class="card-footer">
-              <div class="technologies">
-                <span>Java</span>
-                <span>MySQL</span>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/Record Management System preview.png"
+                  alt="Student Archive System project preview"
+                  loading="lazy"
+                /><span class="project-number">01</span>
               </div>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <div class="project-content">
+                <div class="project-topline">
+                  <span>ACADEMIC PROJECT</span><span>JAVA</span>
+                </div>
+                <h3>Student Archive System</h3>
+                <p>
+                  A Java-based student archive system developed as a Grade 12
+                  group project for organizing and managing historical student
+                  records.
+                </p>
+                <div class="project-footer">
+                  <div class="tags"><span>Java</span><span>MySQL</span></div>
+                  <a
+                    href="https://github.com/Jownyvar"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View GitHub profile"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-image project-placeholder">
+                <div class="placeholder-mark">
+                  <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <span class="project-number">02</span>
+              </div>
+              <div class="project-content">
+                <div class="project-topline">
+                  <span>WEB DEVELOPMENT</span><span>REACT</span>
+                </div>
+                <h3>Brew Desk</h3>
+                <p>
+                  A web-based point-of-sale and inventory management project
+                  focused on organizing products, stock, and day-to-day
+                  operations.
+                </p>
+                <div class="project-footer">
+                  <div class="tags">
+                    <span>React</span><span>Firebase</span>
+                  </div>
+                  <a
+                    href="https://github.com/Jownyvar"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View GitHub profile"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card">
+              <div
+                class="project-image project-placeholder project-placeholder-alt"
+              >
+                <div class="placeholder-mark">
+                  <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+                <span class="project-number">03</span>
+              </div>
+              <div class="project-content">
+                <div class="project-topline">
+                  <span>PROPOSED SYSTEM</span><span>MOBILE / WEB</span>
+                </div>
+                <h3>E-JeepTrack</h3>
+                <p>
+                  A proposed transport assistance system concept featuring route
+                  information, vehicle tracking, and estimated arrival
+                  information.
+                </p>
+                <div class="project-footer">
+                  <div class="tags">
+                    <span>JavaScript</span><span>Firebase</span>
+                  </div>
+                  <a
+                    href="https://github.com/Jownyvar"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View GitHub profile"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container background-section" id="education">
+        <div class="section-kicker">
+          <span>03</span><span>MY BACKGROUND</span>
+        </div>
+        <div class="background-grid">
+          <div class="education-section">
+            <p class="eyebrow">THE JOURNEY SO FAR</p>
+            <h2 class="display-title">EDUCATION<span>.</span></h2>
+            <div class="timeline">
+              <article class="school">
+                <div class="school-logo">
+                  <img
+                    src="assets/bulsu.png"
+                    alt="Bulacan State University logo"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="school-background">
+                  <span class="timeline-date">2024 — PRESENT</span>
+                  <h3>Bulacan State University</h3>
+                  <p>Bachelor of Science in Information Technology</p>
+                </div>
+              </article>
+              <article class="school">
+                <div class="school-logo">
+                  <img src="assets/sti.png" alt="STI logo" loading="lazy" />
+                </div>
+                <div class="school-background">
+                  <span class="timeline-date">2023 — 2024</span>
+                  <h3>System Technology Institute (STI)</h3>
+                  <p>Bachelor of Science in Information Technology</p>
+                </div>
+              </article>
+              <article class="school">
+                <div class="school-logo">
+                  <img
+                    src="assets/marcelo.png"
+                    alt="Marcelo H. del Pilar National High School logo"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="school-background">
+                  <span class="timeline-date">2021 — 2023</span>
+                  <h3>Marcelo H. del Pilar National High School</h3>
+                  <p>Senior High School <em>(TVL — Programming)</em></p>
+                </div>
+              </article>
+              <article class="school">
+                <div class="school-logo">
+                  <img
+                    src="assets/marcelo.png"
+                    alt="Marcelo H. del Pilar National High School logo"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="school-background">
+                  <span class="timeline-date">2017 — 2021</span>
+                  <h3>Marcelo H. del Pilar National High School</h3>
+                  <p>Junior High School</p>
+                </div>
+              </article>
             </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="top">
-            <img src="assets/Record Management System preview.png" alt="" />
-          </div>
-          <div class="bottom">
-            <h3 class="project-title">Student Archive System</h3>
-            <p class="project-desc">
-              A Java-based student archive system developed as a Grade 12 group
-              project for organizing and managing historical student records.
+          <div class="contact-section" id="contact">
+            <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+            <h2 class="display-title">LET'S TALK<span>.</span></h2>
+            <p class="contact-intro">
+              Have a question, opportunity, or just want to connect? Send me a
+              message.
             </p>
-            <div class="card-footer">
-              <div class="technologies">
-                <span>Java</span>
-                <span>MySQL</span>
+            <form
+              action="mailto:78johnlloyd@gmail.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <div class="form-field">
+                <label for="fname">Full Name</label
+                ><input
+                  type="text"
+                  id="fname"
+                  name="Full Name"
+                  placeholder="Enter your full name"
+                  required
+                />
               </div>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="top">
-            <img src="assets/Record Management System preview.png" alt="" />
-          </div>
-          <div class="bottom">
-            <h3 class="project-title">Student Archive System</h3>
-            <p class="project-desc">
-              A Java-based student archive system developed as a Grade 12 group
-              project for organizing and managing historical student records.
-            </p>
-            <div class="card-footer">
-              <div class="technologies">
-                <span>Java</span>
-                <span>MySQL</span>
+              <div class="form-field">
+                <label for="email">Email Address</label
+                ><input
+                  type="email"
+                  id="email"
+                  name="Email"
+                  placeholder="john.doe@example.com"
+                  required
+                />
               </div>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div>
+              <div class="form-field">
+                <label for="message">Message</label
+                ><textarea
+                  id="message"
+                  name="Message"
+                  placeholder="How can I help you?"
+                  required
+                ></textarea>
+              </div>
+              <button class="btn primary submit-btn" type="submit">
+                Send Message <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
+            <a class="email-link" href="mailto:78johnlloyd@gmail.com"
+              ><i class="fa-regular fa-envelope"></i> 78johnlloyd@gmail.com</a
+            >
           </div>
         </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="footer-brand" href="#home">V<span>.</span></a
+        ><span>© 2026 Vargas. All rights reserved.</span
+        ><span>Designed &amp; built by <strong>Vargas</strong></span>
       </div>
-      <hr style="margin-bottom: 15px" />
-    </section>
-    <section class="background container">
-      <!-- <div class="experience-section">
-        <h2 class="background-title">EXPERIENCE</h2>
-      </div> -->
-      <div class="education-section">
-        <h2 class="background-title">EDUCATION</h2>
-        <div class="school">
-          <img
-            src="assets/bulsu.png"
-            alt="bulacan state university logo"
-            style="height: 55px"
-          />
-          <div class="school-background">
-            <h3 class="shool-name">Bulacan State University</h3>
-            <p class="course">Bachelor of Science in Information Technology</p>
-            <p class="timeline">2024 - Present</p>
-          </div>
-        </div>
-        <div class="school">
-          <img
-            src="assets/sti.png"
-            alt="bulacan state university logo"
-            style="height: 32px"
-          />
-          <div class="school-background">
-            <h3 class="shool-name">System Technology Institute (STI)</h3>
-            <p class="course">Bachelor of Science in Information Technology</p>
-            <p class="timeline">2023 - 2024</p>
-          </div>
-        </div>
-        <div class="school">
-          <img
-            src="assets/marcelo.png"
-            alt="bulacan state university logo"
-            style="height: 55px"
-          />
-          <div class="school-background">
-            <h3 class="shool-name">
-              Marcelo H. del Pilar National High School
-            </h3>
-            <p class="course">
-              Senior High SChool
-              <span style="font-style: italic">(TVL - Programming)</span>
-            </p>
-            <p class="timeline">2021 - 2023</p>
-          </div>
-        </div>
-        <div class="school">
-          <img
-            src="assets/marcelo.png"
-            alt="bulacan state university logo"
-            style="height: 55px"
-          />
-          <div class="school-background">
-            <h3 class="shool-name">
-              Marcelo H. del Pilar National High School
-            </h3>
-            <p class="course">Junior High School</p>
-            <p class="timeline">2017 - 2021</p>
-          </div>
-        </div>
-      </div>
-      <div id="contact" class="contact-section">
-        <h2 class="background-title">GET IN TOUCH</h2>
-        <form action="mailto:78johnlloyd@gmail.com" method="post">
-          <div>
-            <label for="fname">Full Name</label>
-            <input
-              type="text"
-              id="fname"
-              name="fname"
-              placeholder="Enter your Full Name"
-            /><br />
-          </div>
-          <div>
-            <label for="email">Email Address</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="john.doe@example.com"
-            /><br />
-          </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea
-              placeholder="How can I be of your help?"
-              id="message"
-              name="message"
-            ></textarea>
-          </div>
-          <div>
-            <button class="btn primary">Send Message</button>
-          </div>
-        </form>
-      </div>
-    </section>
-    <footer class="container">
-      <span>© 2026 Vargas. All rights reserved.</span>
-      <span
-        >Designed and Built by
-        <span style="color: #f48524; font-weight: bold">Vargas</span>
-      </span>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
